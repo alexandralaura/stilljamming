@@ -1,6 +1,9 @@
 //import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import {SearchBar} from '../SearchBar/SearchBar';
+import { SearchResults } from '../SearchResults/SearchResults';
+import { Playlist } from '../Playlist/Playlist';
 
 class App extends React.Component {
   render() {
@@ -12,9 +15,12 @@ class App extends React.Component {
     
       <div className="App">
          {/*add a searchbar component*/}
+         <SearchBar/>
         <div className="App-playlist">
         {/* searchresults component*/}
+        <SearchResults/>
         {/* playlists component*/}
+        <Playlist/>
 
          </div>
       </div>

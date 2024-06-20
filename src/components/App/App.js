@@ -6,6 +6,16 @@ import { SearchResults } from '../SearchResults/SearchResults';
 import { Playlist } from '../Playlist/Playlist';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state={SearchResults:[
+      {name: "Example Track Name",
+      artist: "Example Track Artist",
+      album: "Example Track Album",
+      id: 1
+      }
+    ]}
+  }
   render() {
     return (
     <div>
